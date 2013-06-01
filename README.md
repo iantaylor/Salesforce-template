@@ -1,7 +1,7 @@
 Vignette Interactive standard Salesforce template
 ===================
 
-#Vignette Interactive Salesforce template with ARC, modern ObjC, and storyboard support
+**Vignette Interactive Salesforce template with ARC, modern ObjC, and storyboard support**
 
 This is our take on the standard Salesforce mobile sdk template for native iOS apps (in ObjC).  It's been modified slightly to support storyboard and converted to ARC enabled, modern ObjC.
 
