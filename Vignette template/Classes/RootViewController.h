@@ -32,6 +32,6 @@
 
 }
 
-@property (nonatomic, retain) NSArray *dataRows;
+@property (nonatomic, strong) NSArray *dataRows;
 
 @end

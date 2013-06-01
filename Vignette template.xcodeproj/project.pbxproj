@@ -835,6 +835,7 @@
 		7C89089B175A614A0052D276 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Vignette template/Vignette template-Prefix.pch";
 				INFOPLIST_FILE = "Vignette template/Vignette template-Info.plist";
@@ -856,6 +857,7 @@
 		7C89089C175A614A0052D276 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Vignette template/Vignette template-Prefix.pch";
 				INFOPLIST_FILE = "Vignette template/Vignette template-Info.plist";
