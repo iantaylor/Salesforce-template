@@ -1,4 +1,4 @@
-Vignette Interactive standard Salesforce template
+Vignette Interactive Salesforce template proj
 ===================
 
 **Vignette Interactive Salesforce template with ARC, modern ObjC, and storyboard support**
