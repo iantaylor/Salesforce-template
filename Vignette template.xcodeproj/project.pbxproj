@@ -50,6 +50,7 @@
 		7C890893175A614A0052D276 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C890892175A614A0052D276 /* libz.dylib */; };
 		7C890895175A614A0052D276 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7C890894175A614A0052D276 /* Settings.bundle */; };
 		7C890897175A614A0052D276 /* SalesforceSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7C890896175A614A0052D276 /* SalesforceSDKResources.bundle */; };
+		7C89089E175A61CC0052D276 /* iPhone Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C89089D175A61CC0052D276 /* iPhone Storyboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -240,6 +241,7 @@
 		7C890892175A614A0052D276 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = /usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		7C890894175A614A0052D276 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		7C890896175A614A0052D276 /* SalesforceSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SalesforceSDKResources.bundle; sourceTree = "<group>"; };
+		7C89089D175A61CC0052D276 /* iPhone Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "iPhone Storyboard.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -309,6 +311,7 @@
 		7C8907B0175A61480052D276 /* Vignette template */ = {
 			isa = PBXGroup;
 			children = (
+				7C89089D175A61CC0052D276 /* iPhone Storyboard.storyboard */,
 				7C890882175A614A0052D276 /* readme.txt */,
 				7C890894175A614A0052D276 /* Settings.bundle */,
 				7C890896175A614A0052D276 /* SalesforceSDKResources.bundle */,
@@ -730,6 +733,7 @@
 				7C89088F175A614A0052D276 /* SFNativeRootViewController.xib in Resources */,
 				7C890895175A614A0052D276 /* Settings.bundle in Resources */,
 				7C890897175A614A0052D276 /* SalesforceSDKResources.bundle in Resources */,
+				7C89089E175A61CC0052D276 /* iPhone Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
