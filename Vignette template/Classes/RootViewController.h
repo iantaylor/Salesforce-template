@@ -26,10 +26,6 @@
 #import "SFRestAPI.h"
 
 @interface RootViewController : UITableViewController <SFRestDelegate> {
-    
-    NSMutableArray *dataRows;
-    IBOutlet UITableView *tableView;    
-
 }
 
 @property (nonatomic, strong) NSArray *dataRows;

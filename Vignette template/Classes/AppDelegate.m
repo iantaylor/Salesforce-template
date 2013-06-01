@@ -31,13 +31,12 @@
  */
 
 
-// Fill these in when creating a new Remote Access client on Force.com 
+// Fill these in when creating a new Remote Access client on Force.com
 static NSString *const RemoteAccessConsumerKey = @"UNLISTED";
 static NSString *const OAuthRedirectURI = @"testsfdc:///mobilesdk/detect/oauth/done";
 
 
 @implementation AppDelegate
-
 
 #pragma mark - Remote Access / OAuth configuration
 
@@ -57,12 +56,12 @@ static NSString *const OAuthRedirectURI = @"testsfdc:///mobilesdk/detect/oauth/d
 
 //NOTE be sure to call all super methods you override.
 
-
 - (UIViewController*)newRootViewController {
-    RootViewController *rootVC = [[RootViewController alloc] initWithNibName:nil bundle:nil];
-    UINavigationController *navVC = [[UINavigationController alloc] initWithRootViewController:rootVC];
+    self.window=[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    UIStoryboard *storybord = [UIStoryboard storyboardWithName:@"iPhone Storyboard" bundle:[NSBundle mainBundle]];
+    UIViewController *vc =[storybord instantiateInitialViewController];
     
-    return navVC;
+    return vc;
 }
 
 

@@ -30,19 +30,6 @@
 
 @implementation RootViewController
 
-@synthesize dataRows;
-
-#pragma mark Misc
-
-- (void)didReceiveMemoryWarning
-{
-    // Releases the view if it doesn't have a superview.
-    [super didReceiveMemoryWarning];
-    
-    // Relinquish ownership any cached data, images, etc that aren't in use.
-}
-
-
 
 #pragma mark - View lifecycle
 - (void)viewDidLoad
@@ -106,7 +93,7 @@
 	cell.imageView.image = image;
 
 	// Configure the cell to show the data.
-	NSDictionary *obj = dataRows[indexPath.row];
+	NSDictionary *obj = self.dataRows[indexPath.row];
 	cell.textLabel.text =  obj[@"Name"];
 
 	//this adds the arrow to the right hand side.
