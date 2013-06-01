@@ -58,7 +58,7 @@
 #pragma mark - SFRestAPIDelegate
 
 - (void)request:(SFRestRequest *)request didLoadResponse:(id)jsonResponse {
-    NSArray *records = [jsonResponse objectForKey:@"records"];
+    NSArray *records = jsonResponse[@"records"];
     NSLog(@"request:didLoadResponse: #records: %d", records.count);
     self.dataRows = records;
     [self.tableView reloadData];
@@ -106,8 +106,8 @@
 	cell.imageView.image = image;
 
 	// Configure the cell to show the data.
-	NSDictionary *obj = [dataRows objectAtIndex:indexPath.row];
-	cell.textLabel.text =  [obj objectForKey:@"Name"];
+	NSDictionary *obj = dataRows[indexPath.row];
+	cell.textLabel.text =  obj[@"Name"];
 
 	//this adds the arrow to the right hand side.
 	cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
