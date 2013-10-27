@@ -23,7 +23,7 @@
  */
 
 #import <UIKit/UIKit.h>
-#import "SFRestAPI.h"
+#import "SFRestAPI+Blocks.h"
 
 @interface RootViewController : UITableViewController <SFRestDelegate> {
 }

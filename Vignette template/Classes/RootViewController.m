@@ -25,7 +25,7 @@
 
 #import "RootViewController.h"
 
-#import "SFRestAPI.h"
+#import "SFRestAPI+Blocks.h"
 #import "SFRestRequest.h"
 
 @implementation RootViewController
@@ -38,13 +38,19 @@
     self.title = @"Mobile SDK Sample App";
     
     //Here we use a query that should work on either Force.com or Database.com
-    SFRestRequest *request = [[SFRestAPI sharedInstance] requestForQuery:@"SELECT Name FROM User LIMIT 10"];    
-    [[SFRestAPI sharedInstance] send:request delegate:self];
+    [[SFRestAPI sharedInstance] performSOQLQuery:@"SELECT Name FROM User LIMIT 10"
+    failBlock:^(NSError *e)
+    {
+        [self handleError:e];
+    } completeBlock:^(NSDictionary *dict)
+    {
+        [self handleCompletion:dict];
+    }];
 }
 
 #pragma mark - SFRestAPIDelegate
 
-- (void)request:(SFRestRequest *)request didLoadResponse:(id)jsonResponse {
+- (void)handleCompletion:(NSDictionary *)jsonResponse {
     NSArray *records = jsonResponse[@"records"];
     NSLog(@"request:didLoadResponse: #records: %d", records.count);
     self.dataRows = records;
@@ -52,7 +58,7 @@
 }
 
 
-- (void)request:(SFRestRequest*)request didFailLoadWithError:(NSError*)error {
+- (void)handleError: (NSError*)error {
     NSLog(@"request:didFailLoadWithError: %@", error);
     //add your failed error handling here
 }
