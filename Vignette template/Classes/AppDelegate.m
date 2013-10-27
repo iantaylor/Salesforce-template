@@ -57,9 +57,8 @@ static NSString *const OAuthRedirectURI = @"testsfdc:///mobilesdk/detect/oauth/d
 //NOTE be sure to call all super methods you override.
 
 - (UIViewController*)newRootViewController {
-    self.window=[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    UIStoryboard *storybord = [UIStoryboard storyboardWithName:@"iPhone Storyboard" bundle:[NSBundle mainBundle]];
-    UIViewController *vc =[storybord instantiateInitialViewController];
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"iPhone Storyboard" bundle:[NSBundle mainBundle]];
+    UIViewController *vc = [storyboard instantiateInitialViewController];
     
     return vc;
 }
